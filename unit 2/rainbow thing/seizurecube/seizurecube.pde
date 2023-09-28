@@ -1,4 +1,5 @@
 //Rainbow Cube, Deity of the End...
+//Is it really a boss? What's the meaning to its existence? What about its meaning?!
 
 float ColorHue;
 
@@ -13,11 +14,9 @@ void setup()
   size(500, 500);
   background(0);
   
-  fill(ColorHue, 255, 200);
-  square(250, 125, 100);
-  
   stroke(255);
   colorMode(HSB, 255);
+  rectMode(CENTER);
   
   ColorHue = 0;
   
@@ -31,13 +30,18 @@ void draw()
   background(0);
   
   //Circle functions! (I need to use Sine/Cosine more often it's super cool)
-  PosY = 200 + cos(angle) * 125;
-  PosX = 200 + sin(angle) * 125;
+  PosY = 250 + cos(angle) * 150;
+  PosX = 250 + sin(angle) * 150;
   
   fill(ColorHue, 255, 200);
-  square(PosX, PosY, 100);
+  square(PosX, PosY, 50);
   
   ColorHue = ColorHue + 2;
   angle = angle + 0.075;
+  
+  fill(0, 99, 99);
+  textAlign(CENTER);
+  textSize(40);
+  text("B O S S !", 250, 250);
   
 }
