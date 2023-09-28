@@ -39,7 +39,7 @@ void draw()
   ColorHue = ColorHue + 2;
   angle = angle + 0.075;
   
-  fill(0, 99, 99);
+  fill(#FF0000);
   textAlign(CENTER);
   textSize(40);
   text("B O S S !", 250, 250);
