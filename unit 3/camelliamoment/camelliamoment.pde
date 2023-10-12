@@ -66,7 +66,7 @@ void setup()
    else if(IsHardcore && !FromAlbum && !IsRemix)
    {
      
-    String[] songs = { "GHOST\nfrom \"Cyphsonia\" EP", "Hello BPM 2023\nSingle", "Flash Me Back\nSingle",  "Lorelei\nComissioned Track: \nADOFAI Championships 2023 GF Tiebreaker"};
+    String[] songs = { "GHOST\nfrom \"Cyphsonia\" EP\n(also has a...Halloween+++++++++ VIP)", "Hello BPM 2023\nSingle", "Flash Me Back\nSingle",  "Lorelei\nComissioned Track: \nADOFAI Championships 2023 GF Tiebreaker"};
      
      SongChosen = Randomizer(songs.length);
      
