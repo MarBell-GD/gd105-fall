@@ -4,7 +4,7 @@
 
 boolean IsFavorite; //If true the pick will be completely bias to a favorite of mine that fills all the boxes.
 boolean IsHardcore; //Whether or not the song is CHAOTIC! If not true, it will be a song more on the chill side.
-boolean FromAlbum; //If true, will be a song from an album, no commissions, EPs, or singles.
+boolean FromAlbum; //If true, has to be songs from an album, no commissions, EPs, or singles.
 boolean IsRemix; //If true, it will choose a remix!
 
 boolean TopSong; //Special bool. If active with IsFavorite and nothing else, will generate my favorite Camellia song, which is also my top favorite song ever!
@@ -22,9 +22,9 @@ void setup()
 {
   
   IsFavorite = false;
-  IsHardcore = false;
+  IsHardcore = true;
   FromAlbum = false;
-  IsRemix = false;
+  IsRemix = true;
   
   //default: false
   TopSong = false;
@@ -234,6 +234,38 @@ void setup()
      text(songs[SongChosen], 500, 500);
      
    }
+   
+   else if(IsHardcore && !FromAlbum && IsRemix)
+   {
+     
+    String[] songs = { "#FairyJoke #CAMELLIAS_CHAFFANDTWERKANDCORE_REMIX\nfrom Camellia's Summary and VIPs 02", "DJ Mass MAD Izm - Beach Side Bunny (Camellia's \"Summertime D'n'B\" Remix)\nfrom Ashed Wings (Special CD)", "Night Is On Fire (VIP)\nfrom Reality Distortion"};
+     
+     SongChosen = Randomizer(songs.length);
+     
+     switch(SongChosen)
+     {
+       
+       case 0:
+       fill(255, 103, 194); //done
+       break;
+       
+       case 1:
+       fill(194, 103, 255); //done
+       break;
+       
+       case 2:
+       fill(255, 103, 103); //done
+       break;
+       
+       case 3:
+       fill(147); //done
+       break;
+       
+     }
+     
+     text(songs[SongChosen], 500, 500);
+     
+   }
     
   }
   else //Favorites
@@ -433,6 +465,38 @@ void setup()
        
        case 1:
        fill(255, 111, 231); //done
+       break;
+       
+     }
+     
+     text(songs[SongChosen], 500, 500);
+     
+   }
+   
+   else if(IsHardcore && !FromAlbum && IsRemix)
+   {
+     
+    String[] songs = { "Jingle (Metal Arrange, Cover)\nfrom Camellia's Summary and VIPs 02", "Bassdrop Freaks (Camellia ft. Camellia)\nfrom Ashed Wings (Special CD)", "Blast your headz with the railgun (BassHouse VIP)\nfrom INSANE INFLAME", "$100 Bills (Camellia's \"215$-Step\" Remix)\nComissioned Track\nBeat Saber Anniversary"};
+     
+     SongChosen = Randomizer(songs.length);
+     
+     switch(SongChosen)
+     {
+       
+       case 0:
+       fill(255, 103, 194); //done
+       break;
+       
+       case 1:
+       fill(194, 103, 255); //done
+       break;
+       
+       case 2:
+       fill(255, 103, 103); //done
+       break;
+       
+       case 3:
+       fill(82, 112, 255); //done
        break;
        
      }
