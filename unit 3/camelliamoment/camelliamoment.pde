@@ -238,7 +238,7 @@ void setup()
    else if(IsHardcore && !FromAlbum && IsRemix)
    {
      
-    String[] songs = { "#FairyJoke #CAMELLIAS_CHAFFANDTWERKANDCORE_REMIX\nfrom Camellia's Summary and VIPs 02", "DJ Mass MAD Izm - Beach Side Bunny (Camellia's \"Summertime D'n'B\" Remix)\nfrom Ashed Wings (Special CD)", "Night Is On Fire (VIP)\nfrom Reality Distortion"};
+    String[] songs = { "#FairyJoke #CAMELLIAS_CHAFFANDTWERKANDCORE_REMIX\nfrom Camellia's Summary and VIPs 02", "DJ Mass MAD Izm - Beach Side Bunny\n(Camellia's \"Summertime D'n'B\" Remix)\nfrom Ashed Wings (Special CD)", "Night Is On Fire (VIP)\nfrom Reality Distortion"};
      
      SongChosen = Randomizer(songs.length);
      
