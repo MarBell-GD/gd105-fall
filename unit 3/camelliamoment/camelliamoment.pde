@@ -246,6 +246,7 @@ void setup()
      {
        
        case 0:
+       textSize(35);
        fill(255, 103, 194); //done
        break;
        
