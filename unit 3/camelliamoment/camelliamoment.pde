@@ -7,7 +7,7 @@ boolean IsHardcore; //Whether or not the song is CHAOTIC! If not true, it will b
 boolean FromAlbum; //If true, will be a song from an album, no commissions, EPs, or singles.
 boolean IsRemix; //If true, it will choose a remix!
 
-boolean TopSong; //Special bool. If active with IsFavorite, will generate my favorite Camellia song, which is also my top favorite song ever!
+boolean TopSong; //Special bool. If active with IsFavorite and nothing else, will generate my favorite Camellia song, which is also my top favorite song ever!
 
 int Randomizer(int max)
 {
@@ -22,8 +22,8 @@ void setup()
 {
   
   IsFavorite = false;
-  IsHardcore = true;
-  FromAlbum = true;
+  IsHardcore = false;
+  FromAlbum = false;
   IsRemix = false;
   
   //default: false
