@@ -21,7 +21,7 @@ int SongChosen;
 void setup()
 {
   
-  IsFavorite = false;
+  IsFavorite = true;
   IsHardcore = true;
   FromAlbum = false;
   IsRemix = true;
@@ -477,7 +477,7 @@ void setup()
    else if(IsHardcore && !FromAlbum && IsRemix)
    {
      
-    String[] songs = { "Jingle (Metal Arrange, Cover)\nfrom Camellia's Summary and VIPs 02", "Bassdrop Freaks (Camellia ft. Camellia)\nfrom Ashed Wings (Special CD)", "Blast your headz with the railgun (BassHouse VIP)\nfrom INSANE INFLAME", "$100 Bills (Camellia's \"215$-Step\" Remix)\nComissioned Track\nBeat Saber Anniversary"};
+    String[] songs = { "Jingle (Metal Arrange, Cover)\nfrom Camellia's Summary and VIPs 02", "Bassdrop Freaks (Camellia ft. Camellia)\nfrom Ashed Wings (Special CD)", "Blast your headz with the railgun\n(BassHouse VIP)\nfrom INSANE INFLAME", "$100 Bills (Camellia's \"215$-Step\" Remix)\nComissioned Track\nBeat Saber Anniversary"};
      
      SongChosen = Randomizer(songs.length);
      
