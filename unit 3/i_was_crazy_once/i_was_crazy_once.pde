@@ -41,7 +41,7 @@ void setup()
     
     }
     
-    line(random(0, 1000), random(0, 1000), random(0, 1000), random(0, 1000));
+    line(random(0, 1000), 0, random(0, 1000), 1000);
     
   }
   
