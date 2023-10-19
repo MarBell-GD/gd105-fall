@@ -2,11 +2,6 @@
 //i can only go on for so long without doing any stanning I need to represent
 //Automatic music recommendations that are totally not biased!
 
-/*
-If anything, there's actually recency bias here, Camellia's discography is over a few hundred tracks, there's a lot to discover!
-I only scratched the surface, and most examples used here are more recent, so go explore
-*/
-
 boolean IsFavorite; //If true the pick will be completely bias to a favorite of mine that fills all the boxes.
 boolean IsHardcore; //Whether or not the song is CHAOTIC! If not true, it will be a song more on the chill side.
 boolean FromAlbum; //If true, has to be songs from an album, no commissions, EPs, or singles.
@@ -27,11 +22,11 @@ void setup()
 {
   
   IsFavorite = true;
-  IsHardcore = false;
+  IsHardcore = true;
   FromAlbum = false;
-  IsRemix = false;
+  IsRemix = true;
   
-  //by default, TopSong is false (remember: must be activated with IsFavorite and ONLY IsFavorite)
+  //default: false
   TopSong = false;
   
   background(0);
