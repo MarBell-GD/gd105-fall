@@ -7,8 +7,11 @@
 int CyanColor;
 float LinePos;
 
+int SecretColor; //(Not so) Hidden seed
+
 //v - Put whatever numbers you want and get something cool out of it! As long as you know the numbers you used, you can get the same image!
 int Seed = 0;
+// :)
 
 
 void setup()
@@ -54,6 +57,42 @@ void setup()
     
     line(LinePos, 0, LinePos + 250, 1000);
     
+    if(Seed == 21 & i >= 50)
+    {
+      
+      SecretColor = int(random(0, 5));
+      
+      switch (SecretColor)
+      {
+    
+        case 0:
+        stroke(232, 191, 255, 50);
+        break;
+    
+        case 1:
+        stroke(226, 173, 255, 50);
+        break;
+    
+        case 2:
+        stroke(188, 156, 206, 50);
+        break;
+    
+        case 3:
+        stroke(147, 118, 162, 50);
+        break;
+    
+        case 4:
+        stroke(242, 219, 255, 50);
+        break;
+    
+      }
+      
+      LinePos = random(-250, 1000);
+    
+      line(0, LinePos, 1000, LinePos + 250);
+      
+    }
+    
   }
   
 }
@@ -63,5 +102,7 @@ void draw()
    
   save("chill.png");
   //Ah, alone again. Trapped in the everlasting cold once more...
+  
+  //int Seed = 21;
   
 }
