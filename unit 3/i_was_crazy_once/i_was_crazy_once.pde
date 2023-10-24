@@ -7,12 +7,18 @@
 int CyanColor;
 float LinePos;
 
+//v - Put whatever numbers you want and get something cool out of it! As long as you know the numbers you used, you can get the same image!
+int Seed = 0;
+
+
 void setup()
 {
   
  size(1000, 1000);
  background(0);
  strokeWeight(20);
+ 
+ randomSeed(Seed);
  
  for(int i = 1; i < 105; i++)
   {
@@ -56,6 +62,6 @@ void draw()
 {
    
   save("chill.png");
-  //Ah, alone again...
+  //Ah, alone again. Trapped in the everlasting cold once more...
   
 }
