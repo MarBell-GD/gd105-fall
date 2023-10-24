@@ -2,7 +2,10 @@
 //...
 //the lines...all 105 of them...
 
+//Cool "glacial" gradient background thing.
+
 int CyanColor;
+float LinePos;
 
 void setup()
 {
@@ -16,7 +19,7 @@ void setup()
     
     CyanColor = int(random(0, 5));
     
-    switch (CyanColor) //1/5 chance to be a purple line instead lol
+    switch (CyanColor)
     {
     
       case 0:
@@ -36,12 +39,14 @@ void setup()
       break;
     
       case 4:
-      stroke(212, 160, 255, 50); //impostor!
+      stroke(255, 255, 255, 50);
       break;
     
     }
+
+    LinePos = random(-250, 1000);
     
-    line(random(0, 1000), 0, random(0, 1000), 1000);
+    line(LinePos, 0, LinePos + 250, 1000);
     
   }
   
@@ -50,6 +55,7 @@ void setup()
 void draw()
 {
    
+  save("chill.png");
   //Ah, alone again...
   
 }
