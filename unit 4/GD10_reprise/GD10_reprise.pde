@@ -1,5 +1,6 @@
 // Inspired by:
 //https://hi-in.facebook.com/193852600651637/photos/frank-singleton-abstract-3-1986-courtesy-of-the-sackner-archive-of-concrete-and-/934331196603770/
+//Yes this code is garbo, yes the mouth and eyes are off center, no I'm lazy I'm not gonna fix it (if it works...it works...)
 
 //GD10 - Typewriter ver. // ASCII ver. // Geometry Dash Icon made with only the letters GD!
 /*
