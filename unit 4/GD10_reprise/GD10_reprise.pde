@@ -92,9 +92,9 @@ WholeLine l11plus1 = new WholeLine("    DDDDDDDDDDDDDDDDDDDDDDDD    ", pos11, cu
 
 void setup()
 {
-  
-  String[] fontList = PFont.list();
-  printArray(fontList);
+  //v - Debug: was for finding the font
+  //String[] fontList = PFont.list();
+  //printArray(fontList);
   
   background(0);
   size(500, 500);
