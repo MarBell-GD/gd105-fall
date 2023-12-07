@@ -37,6 +37,13 @@ class Player
       
     }
     
+    if(Pos.y < 10)
+    {
+      
+      Pos.y = 10;
+      
+    }
+    
     square(Pos.x, Pos.y, 20);
     
   }
